@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, sans-serif; color: #e5e7eb; background: #080d18; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select { font: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #60a5fa; outline-offset: 3px; }
+.panel { background: rgba(17,24,39,.82); border: 1px solid rgba(148,163,184,.14); backdrop-filter: blur(18px); }
+.field { width: 100%; border: 1px solid #273449; border-radius: 12px; background: #0b1220; color: #e5e7eb; padding: 12px 14px; }
+.field:focus { border-color: #3b82f6; outline: none; }
+.field-label { display: block; margin-bottom: 8px; color: #a6b2c5; font-size: 13px; font-weight: 500; }
+.primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 12px; background: #2563eb; padding: 13px 20px; color: white; font-weight: 600; transition: background 150ms ease, transform 150ms ease; }
+.primary-button:hover { background: #1d4ed8; }
+.primary-button:active { transform: scale(.98); }
+.primary-button:disabled { cursor: not-allowed; opacity: .65; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.animate-spin { animation: spin .8s linear infinite; }
